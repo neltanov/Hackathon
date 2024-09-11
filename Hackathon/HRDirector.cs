@@ -1,4 +1,4 @@
-namespace HackathonApp;
+namespace Nsu.HackathonProblem;
 
 public class HRDirector
 {
