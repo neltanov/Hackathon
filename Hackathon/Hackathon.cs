@@ -11,7 +11,10 @@ public class Hackathon
         HRManager hrManager = new HRManager();
         
         var teams = hrManager.TeamBuildingStrategy.BuildTeams(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
-        
+        foreach (var team in teams)
+        {
+            Console.WriteLine(team);
+        }
         // HRDirector hrDirector = new HRDirector(teams);
         // do some actions to evaluate harmonic mean satisfaction score
     }
