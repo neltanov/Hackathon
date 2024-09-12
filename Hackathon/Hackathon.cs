@@ -12,6 +12,8 @@ public class Hackathon
         
         var teams = hrManager.TeamBuildingStrategy.BuildTeams(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
         
+        // HRDirector hrDirector = new HRDirector(teams);
+        // do some actions to evaluate harmonic mean satisfaction score
     }
     
     private static List<Wishlist> RandomGenerateWishlist(List<Employee> group, List<Employee> desiredGroup)

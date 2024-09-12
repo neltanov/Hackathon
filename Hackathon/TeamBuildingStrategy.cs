@@ -10,8 +10,16 @@ public class TeamBuildingStrategy : ITeamBuildingStrategy
         var teams = new List<Team>
         {
             new Team(new Employee(1, "John"), new Employee(2, "Jane")),
-            new Team(new Employee(3, "Joshua"), new Employee(5, "Alex"))
         };
+        foreach (var teamLead in teamLeads)
+        {
+            Console.WriteLine($"Team Lead: {teamLead}");
+        }
+
+        foreach (var junior in juniors)
+        {
+            Console.WriteLine($"Junior: {junior}");
+        }
         return teams;
     }
 }

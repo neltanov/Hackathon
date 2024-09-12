@@ -1,4 +1,6 @@
-﻿using Nsu.HackathonProblem.Contracts;
+﻿using System.Linq.Expressions;
+using Nsu.HackathonProblem.Contracts;
+using Nsu.HackathonProblem.Utils;
 
 namespace Nsu.HackathonProblem;
 
@@ -6,20 +8,18 @@ static class Program
 {
     static void Main(string[] args)
     {
-        Hackathon hackathon = new Hackathon();
+        try
+        {
+            Hackathon hackathon = new Hackathon();
         
-        List<Employee> teamLeads = new List<Employee>();
-        teamLeads.Add(new Employee(1, "John Doe"));
-        teamLeads.Add(new Employee(2, "Alex Jones"));
-        List<Employee> juniors = new List<Employee>();
-        juniors.Add(new Employee(3, "Jack Halen"));
-        juniors.Add(new Employee(4, "Eman Kennel"));
+            List<Employee> teamLeads = CsvParser.ParseCsv(args[0]);
+            List<Employee> juniors = CsvParser.ParseCsv(args[1]);
         
-        hackathon.Start(teamLeads, juniors);
-        // for (int i = 0; i < 1000; i++)
-        // {
-            // посчитать уровень гармоничности
-        // }
-        Console.WriteLine("Hackathon starting...");
+            hackathon.Start(teamLeads, juniors);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
     }
 }
