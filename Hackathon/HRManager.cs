@@ -1,13 +1,12 @@
 namespace Nsu.HackathonProblem;
 
-public class HRManager
+public class HrManager
 {
-    public HRManager()
+    public HrManager()
     {
-        TeamBuildingStrategy teamBuildingStrategy = new TeamBuildingStrategy();
+        var teamBuildingStrategy = new TeamBuildingStrategy();
         TeamBuildingStrategy = teamBuildingStrategy;
-
     }
 
-    public TeamBuildingStrategy TeamBuildingStrategy { get; set; }
+    public TeamBuildingStrategy TeamBuildingStrategy { get; }
 }

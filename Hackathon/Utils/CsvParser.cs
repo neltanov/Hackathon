@@ -2,7 +2,7 @@ using Nsu.HackathonProblem.Contracts;
 
 namespace Nsu.HackathonProblem.Utils;
 
-public class CsvParser
+public static class CsvParser
 {
     public static List<Employee> ParseCsv(string filePath)
     {

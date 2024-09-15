@@ -16,12 +16,12 @@ public class TeamBuildingStrategy : ITeamBuildingStrategy
         var currentOffers = new Dictionary<int, int>();
 
         var proposals = new Dictionary<int, HashSet<int>>();
-        foreach (var lead in teamLeads)
+        foreach (var lead in teamLeadById)
         {
-            proposals[lead.Id] = new HashSet<int>();
+            proposals[lead.Key] = [];
         }
 
-        var freeTeamLeads = new Queue<int>(teamLeads.Select(e => e.Id));
+        var freeTeamLeads = new Queue<int>(teamLeadById.Select(p => p.Key));
 
         while (freeTeamLeads.Count > 0)
         {
@@ -59,9 +59,7 @@ public class TeamBuildingStrategy : ITeamBuildingStrategy
                 }
             }
         }
-
-        // Формируем окончательные команды
+        
         return currentOffers.Select(pair => new Team(teamLeadById[pair.Value], juniorById[pair.Key])).ToList();
-
     }
 }

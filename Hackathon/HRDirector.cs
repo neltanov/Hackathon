@@ -2,7 +2,7 @@ using Nsu.HackathonProblem.Contracts;
 
 namespace Nsu.HackathonProblem;
 
-public class HRDirector
+public static class HrDirector
 {
     private static IEnumerable<int> SatisfactionIndexCalculation(IEnumerable<Team> teams, 
         IEnumerable<Wishlist> teamLeadsWishlists, IEnumerable<Wishlist> juniorsWishlists)
