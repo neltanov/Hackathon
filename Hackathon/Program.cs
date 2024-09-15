@@ -6,7 +6,7 @@ static class Program
 {
     static void Main(string[] args)
     {
-        var harmonicMean = 0d;
+        var sumOfHarmonicMean = 0d;
         try
         {
             var teamLeads = CsvParser.ParseCsv(args[0]);
@@ -14,9 +14,9 @@ static class Program
             var rounds = int.Parse(args[2]);
             for (int i = 0; i < rounds; i++)
             {
-                harmonicMean += Hackathon.Start(teamLeads, juniors);
+                sumOfHarmonicMean += Hackathon.Start(teamLeads, juniors);
             }
-            Console.WriteLine($"Average harmony of hackatons: {double.Round(harmonicMean / 1000, 3)}");
+            Console.WriteLine($"Average harmony of hackathons: {double.Round(sumOfHarmonicMean / rounds, 3)}");
         }
         catch (Exception e)
         {
