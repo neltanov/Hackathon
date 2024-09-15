@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices.Marshalling;
 namespace Nsu.HackathonProblem;
 
 public class HRManager

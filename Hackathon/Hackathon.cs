@@ -3,20 +3,16 @@ using Nsu.HackathonProblem.Contracts;
 namespace Nsu.HackathonProblem;
 public class Hackathon
 {
-    public void Start(List<Employee> teamLeads, List<Employee> juniors)
+    public double Start(List<Employee> teamLeads, List<Employee> juniors)
     {
         List<Wishlist> teamLeadsWishlists = RandomGenerateWishlist(teamLeads, juniors);
         List<Wishlist> juniorsWishlists = RandomGenerateWishlist(juniors, teamLeads);
         
-        HRManager hrManager = new HRManager();
+        var hrManager = new HRManager();
         
         var teams = hrManager.TeamBuildingStrategy.BuildTeams(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
-        foreach (var team in teams)
-        {
-            Console.WriteLine(team);
-        }
-        // HRDirector hrDirector = new HRDirector(teams);
-        // do some actions to evaluate harmonic mean satisfaction score
+        
+        return HRDirector.CalculateHarmonicMean(teams, teamLeadsWishlists, juniorsWishlists);
     }
     
     private static List<Wishlist> RandomGenerateWishlist(List<Employee> group, List<Employee> desiredGroup)

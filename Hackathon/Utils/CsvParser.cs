@@ -13,8 +13,8 @@ public class CsvParser
             .Select(line =>
             {
                 var parts = line.Split(';');
-                int id = int.Parse(parts[0]);
-                string name = parts[1];
+                var id = int.Parse(parts[0]);
+                var name = parts[1];
                 return new Employee(id, name);
             })
             .ToList();
