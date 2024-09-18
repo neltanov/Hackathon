@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Nsu.HackathonProblem/1.0.0": {
+        "dependencies": {
+          "Nsu.HackathonProblem.Contracts": "1.0.0",
+          "Nsu.HackathonProblem.TeamBuildingStrategy": "1.0.0"
+        },
+        "runtime": {
+          "Nsu.HackathonProblem.dll": {}
+        }
+      },
+      "Nsu.HackathonProblem.Contracts/1.0.0": {
+        "runtime": {
+          "Nsu.HackathonProblem.Contracts.dll": {}
+        }
+      },
+      "Nsu.HackathonProblem.TeamBuildingStrategy/1.0.0": {
+        "dependencies": {
+          "Nsu.HackathonProblem.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "Nsu.HackathonProblem.TeamBuildingStrategy.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nsu.HackathonProblem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nsu.HackathonProblem.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nsu.HackathonProblem.TeamBuildingStrategy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

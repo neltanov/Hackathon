@@ -1,0 +1,16 @@
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/bin/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.deps.json
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/bin/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/bin/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.pdb
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/bin/Debug/net8.0/Nsu.HackathonProblem.Contracts.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/bin/Debug/net8.0/Nsu.HackathonProblem.Contracts.pdb
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.csproj.AssemblyReference.cache
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.GeneratedMSBuildEditorConfig.editorconfig
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.AssemblyInfoInputs.cache
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.AssemblyInfo.cs
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.csproj.CoreCompileInputs.cache
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.sourcelink.json
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.csproj.CopyComplete
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/refint/Nsu.HackathonProblem.TeamBuildingStrategy.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/Nsu.HackathonProblem.TeamBuildingStrategy.pdb
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.TeamBuildingStrategy/obj/Debug/net8.0/ref/Nsu.HackathonProblem.TeamBuildingStrategy.dll
