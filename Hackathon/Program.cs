@@ -16,11 +16,16 @@ static class Program
             {
                 sumOfHarmonicMean += Hackathon.Start(teamLeads, juniors);
             }
+
             Console.WriteLine($"Average harmony of hackathons: {double.Round(sumOfHarmonicMean / rounds, 3)}");
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
+        }
+        finally
+        {
+            Console.WriteLine("Press any key to exit...");
         }
     }
 }

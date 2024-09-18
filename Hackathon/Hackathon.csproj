@@ -9,12 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="Nsu.HackathonProblem.Contracts">
-        <HintPath>..\..\Nsu.HackathonProblem.Contracts\Nsu.HackathonProblem.Contracts\bin\Debug\net8.0\Nsu.HackathonProblem.Contracts.dll</HintPath>
-      </Reference>
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Remove="Contracts\**" />
     </ItemGroup>
 
@@ -24,6 +18,10 @@
 
     <ItemGroup>
       <None Remove="Contracts\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Nsu.HackathonProblem.Contracts\Nsu.HackathonProblem.Contracts\Nsu.HackathonProblem.Contracts.csproj" />
     </ItemGroup>
 
 </Project>
