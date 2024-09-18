@@ -1,6 +1,6 @@
-using Nsu.HackathonProblem.Contracts;
+﻿using Nsu.HackathonProblem.TeamBuildingStrategy.Contracts;
 
-namespace Nsu.HackathonProblem;
+namespace Nsu.HackathonProblem.TeamBuildingStrategy;
 
 public class TeamBuildingStrategy : ITeamBuildingStrategy
 {

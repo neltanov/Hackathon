@@ -1,4 +1,4 @@
-﻿using Nsu.HackathonProblem.Utils;
+﻿using Nsu.HackathonProblem.TeamBuildingStrategy.Utils;
 
 namespace Nsu.HackathonProblem;
 
@@ -22,10 +22,6 @@ static class Program
         catch (Exception e)
         {
             Console.WriteLine(e);
-        }
-        finally
-        {
-            Console.WriteLine("Press any key to exit...");
         }
     }
 }

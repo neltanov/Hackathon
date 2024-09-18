@@ -1,6 +1,6 @@
-using Nsu.HackathonProblem.Contracts;
+using Nsu.HackathonProblem.TeamBuildingStrategy.Contracts;
 
-namespace Nsu.HackathonProblem.Utils;
+namespace Nsu.HackathonProblem.TeamBuildingStrategy.Utils;
 
 public static class CsvParser
 {
