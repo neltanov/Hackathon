@@ -18,6 +18,12 @@
 
     <ItemGroup>
       <None Remove="Contracts\**" />
+      <None Update="EmployeeData\Teamleads20.csv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="EmployeeData\Juniors20.csv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
     <ItemGroup>
