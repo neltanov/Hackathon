@@ -9,3 +9,15 @@
 /home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/refint/Nsu.HackathonProblem.Contracts.dll
 /home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.pdb
 /home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/ref/Nsu.HackathonProblem.Contracts.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/bin/Debug/net8.0/Nsu.HackathonProblem.Contracts.deps.json
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/bin/Debug/net8.0/Nsu.HackathonProblem.Contracts.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/bin/Debug/net8.0/Nsu.HackathonProblem.Contracts.pdb
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.AssemblyInfoInputs.cache
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.AssemblyInfo.cs
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.csproj.CoreCompileInputs.cache
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.sourcelink.json
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/refint/Nsu.HackathonProblem.Contracts.dll
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/Nsu.HackathonProblem.Contracts.pdb
+/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/Debug/net8.0/ref/Nsu.HackathonProblem.Contracts.dll

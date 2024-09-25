@@ -17,8 +17,8 @@
   "libraries": {
     "Nsu.HackathonProblem.Contracts/1.0.0": {
       "type": "project",
-      "path": "../../Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj",
-      "msbuildProject": "../../Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj"
+      "path": "../Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj",
+      "msbuildProject": "../Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -51,6 +51,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj": {
+              "projectPath": "/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj"
+            },
             "/home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj": {
               "projectPath": "/home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj"
             }

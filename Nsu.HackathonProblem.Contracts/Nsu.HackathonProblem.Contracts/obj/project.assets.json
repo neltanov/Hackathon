@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj",
+      "projectUniqueName": "/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj",
       "projectName": "Nsu.HackathonProblem.Contracts",
-      "projectPath": "/home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj",
+      "projectPath": "/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts.csproj",
       "packagesPath": "/home/nelta/.nuget/packages/",
-      "outputPath": "/home/nelta/prog/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/",
+      "outputPath": "/home/nelta/prog/Hackathon/Nsu.HackathonProblem.Contracts/Nsu.HackathonProblem.Contracts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nelta/.nuget/NuGet/NuGet.Config"
