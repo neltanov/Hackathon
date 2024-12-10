@@ -1,8 +1,8 @@
-﻿using Nsu.HackathonProblem.TeamBuildingStrategy.Contracts;
+﻿using Nsu.HackathonProblem.Contracts;
 
 namespace Nsu.HackathonProblem.TeamBuildingStrategy;
 
-public class TeamBuildingStrategy : ITeamBuildingStrategy
+public class StableMatchingsTeamBuildingStrategy : ITeamBuildingStrategy
 {
     public IEnumerable<Team> BuildTeams(IEnumerable<Employee> teamLeads, IEnumerable<Employee> juniors, 
         IEnumerable<Wishlist> teamLeadsWishlists, IEnumerable<Wishlist> juniorsWishlists)

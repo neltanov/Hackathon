@@ -1,15 +1,14 @@
-using Nsu.HackathonProblem.TeamBuildingStrategy;
+using Nsu.HackathonProblem.Contracts;
 
 namespace Nsu.HackathonProblem
 {
-    public class HrManager
+    public class HrManager(ITeamBuildingStrategy teamBuildingStrategy)
     {
-        public HrManager()
+        public IEnumerable<Team> BuildTeams(List<Employee> teamLeads, List<Employee> juniors, List<Wishlist> teamLeadsWishlists,
+            List<Wishlist> juniorsWishlists)
         {
-            var teamBuildingStrategy = new TeamBuildingStrategy.TeamBuildingStrategy();
-            TeamBuildingStrategy = teamBuildingStrategy;
+            var teams = teamBuildingStrategy.BuildTeams(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
+            return teams;
         }
-
-        public TeamBuildingStrategy.TeamBuildingStrategy TeamBuildingStrategy { get; }
     }
 }

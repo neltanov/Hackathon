@@ -1,20 +1,20 @@
-using Nsu.HackathonProblem.TeamBuildingStrategy.Contracts;
+using Nsu.HackathonProblem.Contracts;
+using Nsu.HackathonProblem.TeamBuildingStrategy;
 
 namespace Nsu.HackathonProblem
 {
-    public static class Hackathon
+    public class Hackathon(List<Employee> teamLeads, List<Employee> juniors)
     {
-        public static double Start(List<Employee> teamLeads, List<Employee> juniors)
+        public double Start()
         {
             var teamLeadsWishlists = RandomGenerateWishlist(teamLeads, juniors);
             var juniorsWishlists = RandomGenerateWishlist(juniors, teamLeads);
 
-            var hrManager = new HrManager();
-
-            var teams = hrManager.TeamBuildingStrategy.BuildTeams(teamLeads, juniors, teamLeadsWishlists,
+            var hrManager = new HrManager(new StableMatchingsTeamBuildingStrategy());
+            var teams = hrManager.BuildTeams(teamLeads, juniors, teamLeadsWishlists,
                 juniorsWishlists);
-
-            return HrDirector.CalculateHarmonicMean(teams, teamLeadsWishlists, juniorsWishlists);
+            
+            return HrDirector.CalculateHarmonicMean(teams.ToList(), teamLeadsWishlists, juniorsWishlists);
         }
 
         private static List<Wishlist> RandomGenerateWishlist(List<Employee> group, List<Employee> desiredGroup)

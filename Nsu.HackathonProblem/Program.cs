@@ -14,7 +14,8 @@ static class Program
             var rounds = int.Parse(args[2]);
             for (int i = 0; i < rounds; i++)
             {
-                sumOfHarmonicMean += Hackathon.Start(teamLeads, juniors);
+                var hackathon = new Hackathon(teamLeads, juniors);
+                sumOfHarmonicMean += hackathon.Start();
             }
 
             Console.WriteLine($"Average harmony of hackathons: {double.Round(sumOfHarmonicMean / rounds, 3)}");

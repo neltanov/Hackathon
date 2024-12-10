@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nsu.HackathonProblem.TeamBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nsu.HackathonProblem.Contracts", "Nsu.HackathonProblem.Contracts\Nsu.HackathonProblem.Contracts\Nsu.HackathonProblem.Contracts.csproj", "{F04811F8-CB72-457E-B87D-2E37E61E2748}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nsu.HackathonProblem.Tests", "Nsu.HackathonProblem.Tests\Nsu.HackathonProblem.Tests.csproj", "{8A932170-6CD1-443B-8D8B-1DF2A3603605}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{F04811F8-CB72-457E-B87D-2E37E61E2748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F04811F8-CB72-457E-B87D-2E37E61E2748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F04811F8-CB72-457E-B87D-2E37E61E2748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A932170-6CD1-443B-8D8B-1DF2A3603605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A932170-6CD1-443B-8D8B-1DF2A3603605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A932170-6CD1-443B-8D8B-1DF2A3603605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A932170-6CD1-443B-8D8B-1DF2A3603605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

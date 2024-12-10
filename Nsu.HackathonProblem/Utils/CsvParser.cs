@@ -1,4 +1,4 @@
-using Nsu.HackathonProblem.TeamBuildingStrategy.Contracts;
+using Nsu.HackathonProblem.Contracts;
 
 namespace Nsu.HackathonProblem.TeamBuildingStrategy.Utils;
 

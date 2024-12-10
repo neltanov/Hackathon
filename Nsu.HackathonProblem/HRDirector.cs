@@ -1,19 +1,18 @@
-using Nsu.HackathonProblem.TeamBuildingStrategy.Contracts;
+using Nsu.HackathonProblem.Contracts;
 
 namespace Nsu.HackathonProblem
 {
 
     public static class HrDirector
     {
-        private static IEnumerable<int> SatisfactionIndexCalculation(IEnumerable<Team> teams,
-            IEnumerable<Wishlist> teamLeadsWishlists, IEnumerable<Wishlist> juniorsWishlists)
+        private static List<int> SatisfactionIndexCalculation(List<Team> teams,
+            List<Wishlist> teamLeadsWishlists, List<Wishlist> juniorsWishlists)
         {
             var juniorPreferences = juniorsWishlists.ToDictionary(w => w.EmployeeId, w => w.DesiredEmployees);
             var teamLeadPreferences = teamLeadsWishlists.ToDictionary(w => w.EmployeeId, w => w.DesiredEmployees);
 
-            var teamList = teams.ToList();
             var satisfactionIndex = new List<int>();
-            foreach (var team in teamList)
+            foreach (var team in teams)
             {
                 var teamLeadIndex = Array.IndexOf(juniorPreferences[team.Junior.Id], team.TeamLead.Id);
                 satisfactionIndex.Add(juniorPreferences.Count - teamLeadIndex);
@@ -24,14 +23,14 @@ namespace Nsu.HackathonProblem
             return satisfactionIndex;
         }
 
-        private static double HarmonicMean(IEnumerable<int> numbers)
+        private static double HarmonicMean(List<int> numbers)
         {
             var numberArray = numbers.ToArray();
             return numberArray.Length / numberArray.Sum(n => 1.0 / n);
         }
 
-        public static double CalculateHarmonicMean(IEnumerable<Team> teams,
-            IEnumerable<Wishlist> teamLeadsWishlists, IEnumerable<Wishlist> juniorsWishlists)
+        public static double CalculateHarmonicMean(List<Team> teams,
+            List<Wishlist> teamLeadsWishlists, List<Wishlist> juniorsWishlists)
         {
             var satisfactionIndices = SatisfactionIndexCalculation(teams,
                 teamLeadsWishlists, juniorsWishlists);
