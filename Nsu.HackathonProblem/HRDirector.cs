@@ -1,4 +1,5 @@
 using Nsu.HackathonProblem.Contracts;
+using Nsu.HackathonProblem.Utils;
 
 namespace Nsu.HackathonProblem
 {
@@ -23,18 +24,12 @@ namespace Nsu.HackathonProblem
             return satisfactionIndex;
         }
 
-        private static double HarmonicMean(List<int> numbers)
-        {
-            var numberArray = numbers.ToArray();
-            return numberArray.Length / numberArray.Sum(n => 1.0 / n);
-        }
-
         public static double CalculateHarmonicMean(List<Team> teams,
             List<Wishlist> teamLeadsWishlists, List<Wishlist> juniorsWishlists)
         {
             var satisfactionIndices = SatisfactionIndexCalculation(teams,
                 teamLeadsWishlists, juniorsWishlists);
-            return HarmonicMean(satisfactionIndices);
+            return HarmonicMeanCalculator.HarmonicMean(satisfactionIndices);
         }
 
     }

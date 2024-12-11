@@ -1,4 +1,5 @@
-﻿using Nsu.HackathonProblem.TeamBuildingStrategy.Utils;
+﻿using Nsu.HackathonProblem.Contracts;
+using Nsu.HackathonProblem.Utils;
 
 namespace Nsu.HackathonProblem;
 
@@ -14,7 +15,9 @@ static class Program
             var rounds = int.Parse(args[2]);
             for (int i = 0; i < rounds; i++)
             {
-                var hackathon = new Hackathon(teamLeads, juniors);
+                var teamLeadsWishlists = WishlistRandomGenerator.RandomGenerateWishlist(teamLeads, juniors);
+                var juniorsWishlists = WishlistRandomGenerator.RandomGenerateWishlist(juniors, teamLeads);
+                var hackathon = new Hackathon(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
                 sumOfHarmonicMean += hackathon.Start();
             }
 

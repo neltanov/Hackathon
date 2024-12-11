@@ -1,6 +1,6 @@
 using Nsu.HackathonProblem.Contracts;
 
-namespace Nsu.HackathonProblem.TeamBuildingStrategy.Utils;
+namespace Nsu.HackathonProblem.Utils;
 
 public static class CsvParser
 {
