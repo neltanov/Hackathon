@@ -9,27 +9,27 @@ public class HackathonTests
     {
         var teamLeads = new List<Employee>
         {
-            new Employee(101, "John"),
-            new Employee(202, "Jane"),
-            new Employee(303, "Doe")
+            new(101, "John"),
+            new(202, "Jane"),
+            new(303, "Doe")
         };
         var juniors = new List<Employee>
         {
-            new Employee(111, "John"),
-            new Employee(222, "Jane"),
-            new Employee(333, "Doe")
+            new(111, "John"),
+            new(222, "Jane"),
+            new(333, "Doe")
         };
         var teamLeadsWishlists = new List<Wishlist>
         {
-            new Wishlist(101, [111, 222, 333]),
-            new Wishlist(202, [111, 222, 333]),
-            new Wishlist(303, [111, 222, 333]),
+            new(101, [111, 222, 333]),
+            new(202, [111, 222, 333]),
+            new(303, [111, 222, 333]),
         };
         var juniorsWishlists = new List<Wishlist>
         {
-            new Wishlist(111, [101, 202, 303]),
-            new Wishlist(222, [101, 202, 303]),
-            new Wishlist(333, [101, 202, 303]),
+            new(111, [101, 202, 303]),
+            new(222, [101, 202, 303]),
+            new(333, [101, 202, 303]),
         };
         var hackathon = new Hackathon(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
         var harmony = hackathon.Start();

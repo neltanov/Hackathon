@@ -22,8 +22,11 @@ public class WishlistTests
         };
         var teamLeadsWishlists = WishlistRandomGenerator.RandomGenerateWishlist(teamLeads, juniors);
         var juniorsWishlists = WishlistRandomGenerator.RandomGenerateWishlist(juniors, teamLeads);
-        Assert.That(teamLeadsWishlists.Count, Is.EqualTo(juniors.Count));
-        Assert.That(juniorsWishlists.Count, Is.EqualTo(teamLeads.Count));
+        Assert.Multiple(() =>
+        {
+            Assert.That(teamLeadsWishlists, Has.Count.EqualTo(juniors.Count));
+            Assert.That(juniorsWishlists, Has.Count.EqualTo(teamLeads.Count));
+        });
     }
 
     [Test]
