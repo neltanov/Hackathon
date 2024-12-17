@@ -4,7 +4,7 @@ using Nsu.HackathonProblem.Utils;
 namespace Nsu.HackathonProblem
 {
 
-    public static class HrDirector
+    public class HrDirector
     {
         private static List<int> SatisfactionIndexCalculation(List<Team> teams,
             List<Wishlist> teamLeadsWishlists, List<Wishlist> juniorsWishlists)

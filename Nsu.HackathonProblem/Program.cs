@@ -1,31 +1,20 @@
-﻿using Nsu.HackathonProblem.Contracts;
-using Nsu.HackathonProblem.Utils;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-namespace Nsu.HackathonProblem;
+using Nsu.HackathonProblem;
+using Nsu.HackathonProblem.Contracts;
+using Nsu.HackathonProblem.TeamBuildingStrategy;
 
-static class Program
-{
-    static void Main(string[] args)
+
+var host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((_, services) =>
     {
-        var sumOfHarmonicMean = 0d;
-        try
-        {
-            var teamLeads = CsvParser.ParseCsv(args[0]);
-            var juniors = CsvParser.ParseCsv(args[1]);
-            var rounds = int.Parse(args[2]);
-            for (int i = 0; i < rounds; i++)
-            {
-                var teamLeadsWishlists = WishlistRandomGenerator.RandomGenerateWishlist(teamLeads, juniors);
-                var juniorsWishlists = WishlistRandomGenerator.RandomGenerateWishlist(juniors, teamLeads);
-                var hackathon = new Hackathon(teamLeads, juniors, teamLeadsWishlists, juniorsWishlists);
-                sumOfHarmonicMean += hackathon.Start();
-            }
+        services.AddHostedService<HackathonWorker>();
+        services.AddTransient<Hackathon>(_ => new Hackathon());
+        services.AddTransient<ITeamBuildingStrategy, StableMatchingsTeamBuildingStrategy>();
+        services.AddTransient<HrManager>();
+        services.AddTransient<HrDirector>();
+    })
+    .Build();
 
-            Console.WriteLine($"Average harmony of hackathons: {double.Round(sumOfHarmonicMean / rounds, 3)}");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-        }
-    }
-}
+host.Run();
